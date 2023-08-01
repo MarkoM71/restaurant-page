@@ -47,3 +47,11 @@ body {
 .hours {
     text-align: center;
 }
+
+.menu {
+    /* display: block;
+    /* flex-direction: column; */
+    /* justify-content: center; */ 
+    text-align: center;
+    margin-top: 40px;
+}
