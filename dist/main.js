@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n\n\n// Create Header Here\n\nfunction createHeader() {\n    const content = document.querySelector(\"#content\");\n    const header = document.createElement(\"h1\");\n    header.textContent = \"Gomitolo's Pizza\";\n    content.appendChild(header);\n}\ncreateHeader();\n\n\n// Create Tabs Here\n\n// Load the Home Page Here\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__.createHomePage)();\n\n\n\n// Add Tab Switching Functionality here.\n\n\n\n//# sourceURL=webpack://ls/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n\n\n// Create Header Here\nfunction createHeader() {\n    const content = document.querySelector(\"#content\");\n    const header = document.createElement(\"h1\");\n    header.textContent = \"Gomitolo's Pizza\";\n    content.appendChild(header);\n}\ncreateHeader();\n\n\n// Create Tabs Here\n\n// Load the Home Page Here\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__.createHomePage)();\n\n\n\n// Add Tab Switching Functionality here.\n\n\n\n//# sourceURL=webpack://ls/./src/index.js?");
 
 /***/ })
 

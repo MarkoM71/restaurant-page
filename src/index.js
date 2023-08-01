@@ -1,7 +1,6 @@
 import { createHomePage } from "./home.js";
 
 // Create Header Here
-
 function createHeader() {
     const content = document.querySelector("#content");
     const header = document.createElement("h1");
