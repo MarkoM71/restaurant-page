@@ -1,8 +1,19 @@
+:root {
+    --font-color: #e31313;
+}
+
+
+body {
+    font-family: Futura;
+}
+
 .header {
     display: flex;
     justify-content: center;
     align-content: center;
     font-size: 40px;
+    color: var(--font-color)
+    
 }
 
 .tab-container {
@@ -10,10 +21,29 @@
     justify-content: space-around;
     align-content: center;
     font-size: 25px;
+    color: var(--font-color)
 }
 
+.home-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    height: 300px;
+    width: 500px;
+    border: solid 5px rgb(84, 198, 84);
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
 
+.caption {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
 
-.homeStyle {
-    color: blue;
+.hours {
+    text-align: center;
 }
