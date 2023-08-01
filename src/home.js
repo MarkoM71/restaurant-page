@@ -13,10 +13,10 @@
 
 export function createHomePage() {
     const content = document.querySelector("#content");
-    const homePage = document.createElement("div");
+    const pageContent = document.createElement("div");
     
-    homePage.textContent = "Best Pizza In Town!";
-    content.appendChild(homePage);
+    pageContent.textContent = "Best Pizza In Town!";
+    content.appendChild(pageContent);
 
 }
 
