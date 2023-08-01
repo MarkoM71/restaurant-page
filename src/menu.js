@@ -8,3 +8,10 @@
 // Make the Menu out of 5 items with the Pizza, description and price.
 
 
+export function createMenu() {
+    const content = document.querySelector("#content");
+    const pageContent = document.createElement("div");
+
+    pageContent.textContent = "Menu";
+    content.appendChild(pageContent);
+}

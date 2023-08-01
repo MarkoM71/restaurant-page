@@ -9,15 +9,12 @@
 
 // Hours
 
-
-
 export function createHomePage() {
     const content = document.querySelector("#content");
     const pageContent = document.createElement("div");
-    
+
     pageContent.textContent = "Best Pizza In Town!";
     content.appendChild(pageContent);
-
 }
 
 

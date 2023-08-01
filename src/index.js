@@ -1,4 +1,6 @@
 import { createHomePage } from "./home.js";
+import { createMenu } from "./menu.js";
+import { createContact } from "./contact.js";
 
 // Create Header Here
 function createHeader() {
@@ -16,24 +18,20 @@ function createTabs() {
 
     const homeTab = document.createElement("div");
     homeTab.textContent = "Home";
+    homeTab.addEventListener('click', createHomePage);
     content.appendChild(homeTab);
 
     const menuTab = document.createElement("div");
     menuTab.textContent = "Menu";
+    menuTab.addEventListener('click', createMenu);
     content.appendChild(menuTab);
 
     const contactTab = document.createElement("div");
     contactTab.textContent = "Contact";
+    contactTab.addEventListener('click', createContact);
     content.appendChild(contactTab);
 }
 createTabs();
 
 // Load the Home Page Here
 createHomePage();
-
-// Add Tab Switching Functionality here.
-function tabSwitch() {
-    homeTab.addEventListener('click', createHomePage);
-    
-}
-

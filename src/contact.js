@@ -12,3 +12,10 @@
 
 // Maybe a picture
 
+export function createContact() {
+    const content = document.querySelector("#content");
+    const pageContent = document.createElement("div");
+
+    pageContent.textContent = "Contact";
+    content.appendChild(pageContent);
+}
