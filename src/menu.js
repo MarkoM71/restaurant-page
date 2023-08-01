@@ -10,8 +10,10 @@
 
 export function createMenu() {
     const content = document.querySelector("#content");
-    const pageContent = document.createElement("div");
+    
 
+    const pageContent = document.createElement("div");
     pageContent.textContent = "Menu";
+    pageContent.classList.add('page-content');
     content.appendChild(pageContent);
 }

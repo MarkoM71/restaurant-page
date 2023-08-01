@@ -11,9 +11,12 @@
 
 export function createHomePage() {
     const content = document.querySelector("#content");
-    const pageContent = document.createElement("div");
+    
 
+    const pageContent = document.createElement("div");
     pageContent.textContent = "Best Pizza In Town!";
+    pageContent.classList.add('page-content');
+    pageContent.classList.add('homeStyle')
     content.appendChild(pageContent);
 }
 

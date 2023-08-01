@@ -6,6 +6,7 @@ import { createContact } from "./contact.js";
 function createHeader() {
     const content = document.querySelector("#content");
     const header = document.createElement("h1");
+    header.classList.add('header');
     header.textContent = "Gomitolo's Pizza";
     content.appendChild(header);
 }
@@ -15,23 +16,44 @@ createHeader();
 // Create Tabs Here
 function createTabs() {
     const content = document.querySelector("#content");
+    const tabContainer = document.createElement("div");
+    tabContainer.classList.add('tab-container');
+
 
     const homeTab = document.createElement("div");
     homeTab.textContent = "Home";
-    homeTab.addEventListener('click', createHomePage);
-    content.appendChild(homeTab);
-
+    tabContainer.appendChild(homeTab);
+    homeTab.addEventListener('click', () => {
+        clearContent();
+        createHomePage()
+    });
+    
     const menuTab = document.createElement("div");
     menuTab.textContent = "Menu";
-    menuTab.addEventListener('click', createMenu);
-    content.appendChild(menuTab);
-
+    tabContainer.appendChild(menuTab);
+    menuTab.addEventListener('click', () => {
+        clearContent();
+        createMenu();
+    });
+    
     const contactTab = document.createElement("div");
     contactTab.textContent = "Contact";
-    contactTab.addEventListener('click', createContact);
-    content.appendChild(contactTab);
+    tabContainer.appendChild(contactTab);
+    contactTab.addEventListener('click', () => {
+        clearContent();
+        createContact();
+    });
+    content.appendChild(tabContainer);
 }
 createTabs();
 
 // Load the Home Page Here
 createHomePage();
+
+function clearContent() {
+    const content = document.querySelector("#content");
+    const pageContent = document.querySelector(".page-content");
+    if (pageContent) {
+        content.removeChild(pageContent);
+    }
+}

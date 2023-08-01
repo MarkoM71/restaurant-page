@@ -14,8 +14,9 @@
 
 export function createContact() {
     const content = document.querySelector("#content");
-    const pageContent = document.createElement("div");
 
+    const pageContent = document.createElement("div");
     pageContent.textContent = "Contact";
+    pageContent.classList.add('page-content');
     content.appendChild(pageContent);
 }
