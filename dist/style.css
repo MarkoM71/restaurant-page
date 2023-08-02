@@ -12,8 +12,7 @@ body {
     justify-content: center;
     align-content: center;
     font-size: 40px;
-    color: var(--font-color)
-    
+    color: var(--font-color) 
 }
 
 .tab-container {
@@ -32,9 +31,6 @@ body {
     height: 300px;
     width: 500px;
     border: solid 5px rgb(84, 198, 84);
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 .caption {
@@ -49,9 +45,16 @@ body {
 }
 
 .menu {
-    /* display: block;
-    /* flex-direction: column; */
-    /* justify-content: center; */ 
     text-align: center;
+    margin-top: 40px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+.address, .email {
     margin-top: 40px;
 }
